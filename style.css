@@ -1,0 +1,53 @@
+html {
+  font-family: 'Vazir' , serif;
+  direction: rtl;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 50px 150px;
+}
+
+.list .list-item {
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+.list .list-item .list-item_head {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(0,0,0,.2);
+  margin-left: 30px;
+}
+
+.list .list-item .list-item_head .head-id {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+
+.list .list-item .list-item_content .item-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.list-item.dragElem {
+  opacity: 0.4;
+  background-color: royalblue;
+}
+
+.list-item.over {
+  /* border: 2px dashed #000; */
+  border-top: 2px solid blue;
+}
